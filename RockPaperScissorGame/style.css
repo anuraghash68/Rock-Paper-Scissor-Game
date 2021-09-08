@@ -1,0 +1,137 @@
+*{
+          padding: 0;
+          margin: 0;
+          box-sizing: border-box;
+}
+
+body{
+          font-family: 'Barlow', sans-serif;
+}
+
+.wrapper{
+          width: 100vw; /* vh -- stand for view content with whole width*/
+          height: 100vh; /* vh - stand for view content with whole height*/
+          background: radial-gradient(134.34% 134.34% at 50% 0%, #1f3757 0%, #131567 100%);
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+}
+
+.scoreboard{
+          width: 700px;
+          height: 140px;
+          margin-top: 50px;
+          border: solid 1px white;
+          border-radius: 20px;
+          display: flex;
+          justify-content: space-between;
+}
+
+.title{
+          margin-left: 20px;
+          margin-top: 25px;
+}
+
+.score{
+          background: white;
+          width: 100px;
+          height: 100px;
+          margin-top: 20px;
+          border-radius: 10px;
+          margin-right: 10px;
+}
+
+.score h1{
+          color: black;
+          margin-left: 40px;
+          height: 20px;
+          margin-top: 10px;  font-weight: 800;
+          font-size: 40px;
+    
+}
+.score p{
+          color: blue;
+          font-size: 20px;
+          font-weight: 800;
+          margin-top: 5px;
+          margin-left: 20px;
+}
+
+
+.main{
+          width: 500px;
+          height: 430px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 102px;
+          background-image: url("/Rock-Paper-Scissor-Game/assets/triangle.png");
+          background-repeat: no-repeat;
+          background-position:center;
+}
+
+.scissor{
+          margin-left: 20px;
+}
+
+.paper{
+          margin-right: 20px;
+}
+
+.main{
+          cursor: pointer;
+          transition: all 0.25s;
+}
+
+.rock:hover{
+          transform: translate3d(0px, -8px, 0px);
+}
+.paper:hover{
+          transform: translate3d(0px, -8px, 0px);
+}
+.scissor:hover{
+          transform: translate3d(0px, -8px, 0px);
+}
+
+.contest{
+          width: 900px;
+          display: none;
+          margin-top: 50px;
+}
+
+.contest > div{
+          flex: 1;
+}
+
+.contest h1{
+          color: white;
+          margin-top: 20px;
+          margin-bottom: 40px;
+          text-align: center;
+}
+
+.contest .userHandImage{
+          display: flex;
+          justify-content: center;
+}
+
+.result{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+}
+
+.newGame{
+          background-color: white;
+          padding: 15px 35px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 0.15s;
+}
+
+.newGame:hover{
+          background-color: #4b7848;
+          color: white;
+          transform: translate3d(0px, -2px, 0px);
+}
